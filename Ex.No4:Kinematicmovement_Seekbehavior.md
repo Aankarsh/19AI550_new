@@ -55,6 +55,9 @@ public class Script : MonoBehaviour
 
 
 
+![image](https://github.com/user-attachments/assets/245e33ec-98b2-44f5-9adc-d550c1d088dc)
+![image](https://github.com/user-attachments/assets/8b5e22a8-2b8b-4495-9ad9-28ef6e0b9d2f)
+
 
 
 
