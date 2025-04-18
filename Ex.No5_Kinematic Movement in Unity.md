@@ -1,4 +1,4 @@
-# Ex.No: 5  Implementation of Kinematic movement -seek behavior in Unity
+# Ex.No:5 Kinematic Movement in Unity
 ### DATE:                                                                            
 ### REGISTER NUMBER : 21222323001
 ### AIM: 
