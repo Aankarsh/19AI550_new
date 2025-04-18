@@ -1,67 +1,35 @@
-# Ex.No: 4  Implementation of Kinematic movement -seek behavior in Unity
-### DATE:08\03\2025                                                                         
+# Ex.No: 1  Installation of Unity for Game Development
+### DATE:                                                                            
 ### REGISTER NUMBER : 212223233001
 ### AIM: 
-To write a program to simulate the process of seek behavior in Unity 
-### Algorithm:
-1. Create a New Unity Project by Open the  Unity Hub and create a new 3D Project,Name the project (e.g., SeekBehaviorDemo).
-2. Create the Moving Object
-   In the Hierarchy, right-click → 3D Object → Cube (or Sphere).
-   Rename it to Seeker and Reset its position:Select the Seeker, go to Inspector → Transform → Set Position to (0,0,0).
-3. Create the Target Object
-   Right-click in the Hierarchy → 3D Object → Sphere (or any other shape).
-   Rename it to Target. Move it away from Seeker, e.g., set Position to (5, 0, 5).
-   Select the Target, add a Material, and change the color. (if needed) 
-4. Adding the Seek Behavior Script
-   Create the Script-In the Project Window, go to the Assets folder.
-   Right-click → Create → C# Script.
-5. Write a script for seek behavior and save it
-6. Attach the Script
-   Select Seeker in the Hierarchy - Drag & Drop the SeekBehavior script onto the Inspector Panel.
-   Drag & Drop the Target from the Hierarchy into the "Target" field in the script component.
-12. Run the game 
-13. Stop the program
-    
-### Program:
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+To install Unity2022.3.57f1 or higher version for Game Development.
+### Procedure:
+1. Goto website https://unity.com/releases/editor/archive or https://unity.com/download  and choose the corresponding Unity Hub and download it.
+2. Create a personal login and choose the plan
+   
+   ![image](https://github.com/user-attachments/assets/f6a2db46-908f-4a91-b63d-794af5cb35d8)
+   
+4. Open the unity Hub and choose install button.
+   
+   ![image](https://github.com/user-attachments/assets/ecbd5e46-cd02-4966-a470-4833e05c2574)
+   
+6. Choose Unity install editor and specify the location
+   
+ ![image](https://github.com/user-attachments/assets/d9e882d1-a73e-4704-a554-2ea4eb1964c7)
 
-public class Script : MonoBehaviour
-{
-    // Start is called before the first frame update
-    public Transform target;  // The object to seek
-    public float speed = 5f;  // Movement speed
-    void Start()
-    {
-        
-    }
+8.  Add modules Microsoft Visual studio community 2022 ,documentation and continue
+9.  After unity hub editor and  Visual studio community 2022 installation proceeds
+   
+   ![image](https://github.com/user-attachments/assets/4425bc37-99c3-4fc6-b887-da5366ae9860)
+   
+9.Now install shows like 
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (target == null) return;  // Exit if no target is assigned
+![image](https://github.com/user-attachments/assets/7e1dd5c5-4398-4c10-89cd-5f0442f49c59)
 
-        // Calculate the desired direction
-        Vector3 direction = (target.position - transform.position).normalized;
+10.Select projects and create new 2D or 3D project and verify all are working
 
-        // Move the object towards the target
-        transform.position += direction * speed * Time.deltaTime;
-    }
-}
-```
-### Output:
-
-
-![3](https://github.com/user-attachments/assets/0fdd759e-c887-408e-8890-9c6a0428b09d)
-
-
-
-![31](https://github.com/user-attachments/assets/80726927-8f6e-476c-b26f-16405a16a465)
-
-
+![image](https://github.com/user-attachments/assets/c902763e-4ba5-42b7-8251-a74db9ba5a42)
 
 
 ### Result:
-Thus the simple seek behavior was implemented successfu
+Thus the unity installation was completed sucessfully.
