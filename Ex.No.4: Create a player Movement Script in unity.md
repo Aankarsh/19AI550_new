@@ -1,35 +1,55 @@
-# Ex.No: 1  Installation of Unity for Game Development
+# Ex.No: 4  Create a player Movement Script in unity 
 ### DATE:                                                                            
 ### REGISTER NUMBER : 212223233001
 ### AIM: 
-To install Unity2022.3.57f1 or higher version for Game Development.
-### Procedure:
-1. Goto website https://unity.com/releases/editor/archive or https://unity.com/download  and choose the corresponding Unity Hub and download it.
-2. Create a personal login and choose the plan
-   
-   ![image](https://github.com/user-attachments/assets/f6a2db46-908f-4a91-b63d-794af5cb35d8)
-   
-4. Open the unity Hub and choose install button.
-   
-   ![image](https://github.com/user-attachments/assets/ecbd5e46-cd02-4966-a470-4833e05c2574)
-   
-6. Choose Unity install editor and specify the location
-   
- ![image](https://github.com/user-attachments/assets/d9e882d1-a73e-4704-a554-2ea4eb1964c7)
+To write a program to create a player movement in unity.
+### Algorithm:
+1. Create a New Unity Project by Open the  Unity Hub and create a new 3D Project,Name the project (e.g., PlayerMovement).
+2. Create the Moving Object
+   In the Hierarchy, right-click → 3D Object → Capsule (or Sphere).
+   Rename it to Player 
+4. Adding the Player Movement Behavior Script
+   Create the Script-In the Project Window, go to the Assets folder.
+   Right-click → Create → C# Script.
+5. Write a script for player behavior and save it
+6. Attach the Script
+   Select player in the Hierarchy - Drag & Drop the playerBehavior script onto the Inspector Panel.
+7. Run the game 
+8. Stop the program
+    
+### Program:
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-8.  Add modules Microsoft Visual studio community 2022 ,documentation and continue
-9.  After unity hub editor and  Visual studio community 2022 installation proceeds
-   
-   ![image](https://github.com/user-attachments/assets/4425bc37-99c3-4fc6-b887-da5366ae9860)
-   
-9.Now install shows like 
+public class Player_movement : MonoBehaviour
+{
+    public float speed = 5.0f;
 
-![image](https://github.com/user-attachments/assets/7e1dd5c5-4398-4c10-89cd-5f0442f49c59)
+void Update()
+{
+    float xdir = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+    float zdir = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
-10.Select projects and create new 2D or 3D project and verify all are working
+    transform.Translate(xdir, 0, zdir);
+}
+}
 
-![image](https://github.com/user-attachments/assets/c902763e-4ba5-42b7-8251-a74db9ba5a42)
+```
+### Output:
+
+![41](https://github.com/user-attachments/assets/eaa695c2-16eb-4fbf-a4be-0a7fac41be1b)
+
+![42](https://github.com/user-attachments/assets/fd4fcb60-2da3-416e-946c-c43d366d42ae)
+
+![43](https://github.com/user-attachments/assets/98453693-1187-40c0-ad84-a604332389fb)
+
+
+![44](https://github.com/user-attachments/assets/b13eabc2-5dd7-49d2-9a1e-f1501a9c54ac)
+
+
 
 
 ### Result:
-Thus the unity installation was completed sucessfully.
+Thus the simple movement behavior was implemented successfully.
